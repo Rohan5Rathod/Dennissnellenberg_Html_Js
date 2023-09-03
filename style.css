@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --background-color:#232323;
+    --text-color:white;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.page1{
+    width: 100%;
+    min-height: 100vh;
+    /* background-image: url(./assets/eli-defaria-oV4PktGcXCs-unsplash.jpg);
+    background-position: center;
+    background-size: cover; */
+
+    position: relative;
+
+    /* filter: brightness(70%); */
+    background-color: gainsboro;
+}
+.page1 img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.sliderContainer{
+    position: absolute;
+    margin-top: calc(100vh - 300px);
+    /* background-color: red; */
+}
+
+.slider{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+
+    &>p{
+        font-size: 230px;
+        line-height: 0.8;
+        color: white;
+    }
+}
+
+
+
+.page2{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-color);
+}
